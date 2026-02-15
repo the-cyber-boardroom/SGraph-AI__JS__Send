@@ -1,0 +1,15 @@
+{
+  "node_id": "e1000004",
+  "node_type": "git-repo",
+  "node_index": 0,
+  "label": "Conductor-1",
+  "title": "Conductor Role — Issue Tracker",
+  "description": "Sprint planning, task routing, research coordination, and status aggregation for the JS file transfer engine.",
+  "status": "active",
+  "created_at": 1739577600000,
+  "updated_at": 1739577600000,
+  "created_by": "c0000001",
+  "tags": ["conductor", "coordination", "transfer-engine"],
+  "links": [],
+  "properties": {}
+}

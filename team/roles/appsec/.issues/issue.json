@@ -1,0 +1,15 @@
+{
+  "node_id": "e1000005",
+  "node_type": "git-repo",
+  "node_index": 0,
+  "label": "AppSec-1",
+  "title": "AppSec Role — Issue Tracker",
+  "description": "Encryption pipeline verification, crypto adapter review, manifest security audit, and dependency audits for the JS file transfer engine.",
+  "status": "active",
+  "created_at": 1739577600000,
+  "updated_at": 1739577600000,
+  "created_by": "c0000001",
+  "tags": ["appsec", "security", "encryption", "transfer-engine"],
+  "links": [],
+  "properties": {}
+}

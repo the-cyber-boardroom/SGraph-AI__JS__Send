@@ -1,0 +1,15 @@
+{
+  "node_id": "e1000002",
+  "node_type": "git-repo",
+  "node_index": 0,
+  "label": "Architect-1",
+  "title": "Architect Role — Issue Tracker",
+  "description": "Adapter interfaces, transfer manifest schema, platform research, and architecture decisions for the JS file transfer engine.",
+  "status": "active",
+  "created_at": 1739577600000,
+  "updated_at": 1739577600000,
+  "created_by": "c0000001",
+  "tags": ["architect", "architecture", "transfer-engine"],
+  "links": [],
+  "properties": {}
+}

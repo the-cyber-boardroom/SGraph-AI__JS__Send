@@ -1,0 +1,15 @@
+{
+  "node_id": "e1000003",
+  "node_type": "git-repo",
+  "node_index": 0,
+  "label": "Dev-1",
+  "title": "Dev Role — Issue Tracker",
+  "description": "Core engine implementation, adapter development, CLI tool, tests, and benchmarks for the JS file transfer engine.",
+  "status": "active",
+  "created_at": 1739577600000,
+  "updated_at": 1739577600000,
+  "created_by": "c0000001",
+  "tags": ["dev", "implementation", "transfer-engine"],
+  "links": [],
+  "properties": {}
+}

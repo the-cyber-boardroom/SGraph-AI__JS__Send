@@ -1,0 +1,15 @@
+{
+  "node_id": "e1000006",
+  "node_type": "git-repo",
+  "node_index": 0,
+  "label": "DevOps-1",
+  "title": "DevOps Role — Issue Tracker",
+  "description": "CI/CD pipelines, NPM publishing, multi-runtime testing, AWS research, and cost modelling for the JS file transfer engine.",
+  "status": "active",
+  "created_at": 1739577600000,
+  "updated_at": 1739577600000,
+  "created_by": "c0000001",
+  "tags": ["devops", "infrastructure", "ci-cd", "transfer-engine"],
+  "links": [],
+  "properties": {}
+}
