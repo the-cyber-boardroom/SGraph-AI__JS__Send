@@ -1,0 +1,22 @@
+{
+  "node_id": "00000001",
+  "node_type": "git-repo",
+  "node_index": 0,
+  "label": "Repo-1",
+  "title": "SGraph Send JS — File Transfer Engine",
+  "description": "Pure JavaScript file transfer engine with multi-runtime support (browser, Node.js, Deno, Bun), pluggable adapters, and CLI tool for SGraph Send.",
+  "status": "active",
+  "created_at": 1739577600000,
+  "updated_at": 1739577600000,
+  "created_by": "c0000001",
+  "tags": ["sgraph", "send", "transfer-engine", "javascript"],
+  "links": [
+    {
+      "link_type_id": "4f012701",
+      "verb": "has-project",
+      "target_id": "a1000001",
+      "target_label": "Project-1"
+    }
+  ],
+  "properties": {}
+}

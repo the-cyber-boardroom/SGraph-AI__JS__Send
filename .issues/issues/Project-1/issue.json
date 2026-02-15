@@ -1,0 +1,28 @@
+{
+  "node_id": "a1000001",
+  "node_type": "project",
+  "node_index": 0,
+  "label": "Project-1",
+  "title": "File Transfer Engine",
+  "description": "Pure JavaScript, transport-agnostic, multi-runtime file transfer engine with pluggable adapters for storage, crypto, compression, transport, UI, and cache.",
+  "status": "active",
+  "created_at": 1739577600000,
+  "updated_at": 1739577600000,
+  "created_by": "c0000001",
+  "tags": ["transfer-engine", "javascript", "multi-runtime"],
+  "links": [
+    {
+      "link_type_id": "4f012701",
+      "verb": "project-of",
+      "target_id": "00000001",
+      "target_label": "Repo-1"
+    },
+    {
+      "link_type_id": "4f012703",
+      "verb": "has-phase",
+      "target_id": "b1000001",
+      "target_label": "Phase-1"
+    }
+  ],
+  "properties": {}
+}

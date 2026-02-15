@@ -1,0 +1,22 @@
+{
+  "node_id": "b1000001",
+  "node_type": "phase",
+  "node_index": 0,
+  "label": "Phase-1",
+  "title": "Core Engine, CLI & Tests",
+  "description": "Define adapter interfaces, implement core engine (chunking, manifest, retry, resume, progress), build Node.js adapters, S3 adapter, CLI tool, and comprehensive test suite.",
+  "status": "active",
+  "created_at": 1739577600000,
+  "updated_at": 1739577600000,
+  "created_by": "c0000001",
+  "tags": ["phase-1", "core-engine", "cli", "tests"],
+  "links": [
+    {
+      "link_type_id": "4f012703",
+      "verb": "phase-of",
+      "target_id": "a1000001",
+      "target_label": "Project-1"
+    }
+  ],
+  "properties": {}
+}
