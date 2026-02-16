@@ -112,7 +112,7 @@ When working as the Villager team, always ask:
 |----------|------|
 | Root guidance | `.claude/CLAUDE.md` |
 | File transfer engine brief | `team/humans/dinis_cruz/briefs/02/15/v0.3.2__briefs__file-transfer-engine-architecture-and-research.md` |
-| Conductor kickoff brief | `team/roles/conductor/briefs/v0.3.2__conductor-brief__transfer-engine-kickoff.md` |
+| Conductor kickoff brief | `team/explorers/roles/conductor/briefs/v0.3.2__conductor-brief__transfer-engine-kickoff.md` |
 | Issues FS | `.issues/` |
 
 ---

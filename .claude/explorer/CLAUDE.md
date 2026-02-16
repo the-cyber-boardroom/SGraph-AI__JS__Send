@@ -90,7 +90,7 @@ When working as the Explorer team, always ask:
 When a component is mature enough for the Villager team:
 
 1. Write a **handover brief** covering: what it does, how it works, known limitations, performance characteristics, what's tested / what isn't, user-facing behaviour
-2. Place handover briefs at: `team/roles/conductor/handovers/{version}__handover__{component}.md`
+2. Place handover briefs at: `team/explorers/roles/conductor/handovers/{version}__handover__{component}.md`
 3. **Once handed over, do not modify the component** without going through the Villager's process
 
 ---
@@ -101,5 +101,5 @@ When a component is mature enough for the Villager team:
 |----------|------|
 | Root guidance | `.claude/CLAUDE.md` |
 | File transfer engine brief | `team/humans/dinis_cruz/briefs/02/15/v0.3.2__briefs__file-transfer-engine-architecture-and-research.md` |
-| Conductor kickoff brief | `team/roles/conductor/briefs/v0.3.2__conductor-brief__transfer-engine-kickoff.md` |
+| Conductor kickoff brief | `team/explorers/roles/conductor/briefs/v0.3.2__conductor-brief__transfer-engine-kickoff.md` |
 | Issues FS | `.issues/` |

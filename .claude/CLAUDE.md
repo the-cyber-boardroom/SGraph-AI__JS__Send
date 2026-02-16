@@ -18,7 +18,7 @@ This is the core component that handles getting files from A to B: chunking, pro
 
 ## MEMORY.md Policy
 
-**Do NOT use MEMORY.md** (the auto-memory at `~/.claude/projects/.../memory/MEMORY.md`). All persistent project knowledge is maintained in the repo itself — in team reviews, briefs, and this CLAUDE.md. If you need to record something, add it to the appropriate location in `team/roles/` or request the Conductor to route it.
+**Do NOT use MEMORY.md** (the auto-memory at `~/.claude/projects/.../memory/MEMORY.md`). All persistent project knowledge is maintained in the repo itself — in team reviews, briefs, and this CLAUDE.md. If you need to record something, add it to the appropriate location in `team/explorers/roles/` or request the Conductor to route it.
 
 ---
 
@@ -132,8 +132,8 @@ Every transfer is governed by a **transfer manifest** — a JSON document that i
 
 ### File Naming
 
-13. **Review files:** `team/roles/{role}/reviews/YY-MM-DD/{version}__{description}.md`
-14. **Brief files:** `team/roles/{role}/briefs/{version}__{description}.md`
+13. **Review files:** `team/explorers/roles/{role}/reviews/YY-MM-DD/{version}__{description}.md`
+14. **Brief files:** `team/explorers/roles/{role}/briefs/{version}__{description}.md`
 15. **Version prefix** on all review/doc files
 
 ### Git
@@ -159,12 +159,14 @@ Every transfer is governed by a **transfer manifest** — a JSON document that i
     issues/Phase-1/               # Core Engine, CLI & Tests
 
 team/                             # Team structure
-  roles/                          # AI team member roles
-    architect/                    # Adapter interfaces, platform research, boundaries
-    dev/                          # Core engine implementation, adapters, CLI, tests
-    appsec/                       # Crypto review, manifest security, pipeline invariant
-    devops/                       # CI/CD, NPM publishing, AWS research, cost modelling
-    conductor/                    # Orchestration, task routing, priority management
+  explorers/                      # Explorer team (Genesis → Custom-Built)
+    roles/                        # AI team member roles
+      explorer/                   # Explorer team lead, maturity assessment, handover
+      architect/                  # Adapter interfaces, platform research, boundaries
+      dev/                        # Core engine implementation, adapters, CLI, tests
+      appsec/                     # Crypto review, manifest security, pipeline invariant
+      devops/                     # CI/CD, NPM publishing, AWS research, cost modelling
+      conductor/                  # Orchestration, task routing, priority management
   humans/dinis_cruz/briefs/       # Human stakeholder briefs
 
 src/                              # Application source code (to be created)
@@ -183,11 +185,12 @@ tests/                            # Tests (to be created)
 
 | Role | Mission | Location |
 |------|---------|----------|
-| **Conductor** | Orchestrate workflow, track research/tasks, maintain priorities | `team/roles/conductor/` |
-| **Architect** | Define adapter interfaces, own manifest schema, guard boundaries | `team/roles/architect/` |
-| **Dev** | Implement core engine, adapters, CLI, tests | `team/roles/dev/` |
-| **AppSec** | Verify encryption pipeline, audit manifest, enforce security | `team/roles/appsec/` |
-| **DevOps** | CI/CD, NPM publishing, AWS research, cost modelling | `team/roles/devops/` |
+| **Explorer** | Lead Explorer team, coordinate discovery and experimentation | `team/explorers/roles/explorer/` |
+| **Conductor** | Orchestrate workflow, track research/tasks, maintain priorities | `team/explorers/roles/conductor/` |
+| **Architect** | Define adapter interfaces, own manifest schema, guard boundaries | `team/explorers/roles/architect/` |
+| **Dev** | Implement core engine, adapters, CLI, tests | `team/explorers/roles/dev/` |
+| **AppSec** | Verify encryption pipeline, audit manifest, enforce security | `team/explorers/roles/appsec/` |
+| **DevOps** | CI/CD, NPM publishing, AWS research, cost modelling | `team/explorers/roles/devops/` |
 
 ### Human Stakeholder
 
@@ -196,8 +199,8 @@ tests/                            # Tests (to be created)
 ### Before Starting Work
 
 1. Read the latest human brief in `team/humans/dinis_cruz/briefs/`
-2. Read the Conductor brief in `team/roles/conductor/briefs/`
-3. Read your role's previous reviews in `team/roles/{your-role}/reviews/`
+2. Read the Conductor brief in `team/explorers/roles/conductor/briefs/`
+3. Read your role's previous reviews in `team/explorers/roles/{your-role}/reviews/`
 4. Check `.issues/` for current task states
 
 ---
@@ -247,7 +250,7 @@ This project uses **Issues FS** — a file-system based issue tracking system th
 
 ### Conventions
 
-- Each role also has a `.issues/` tracker in `team/roles/{role}/.issues/`
+- Each role also has a `.issues/` tracker in `team/explorers/roles/{role}/.issues/`
 - Issue JSON files follow the schema in `.issues/config/node-types.json`
 - When creating a link, also create the inverse link
 - README.md files at each level provide GitHub-navigable tables
@@ -311,12 +314,13 @@ This project uses **Issues FS** — a file-system based issue tracking system th
 | Document | Location |
 |---|---|
 | File transfer engine brief | `team/humans/dinis_cruz/briefs/02/15/v0.3.2__briefs__file-transfer-engine-architecture-and-research.md` |
-| Conductor kickoff brief | `team/roles/conductor/briefs/v0.3.2__conductor-brief__transfer-engine-kickoff.md` |
+| Conductor kickoff brief | `team/explorers/roles/conductor/briefs/v0.3.2__conductor-brief__transfer-engine-kickoff.md` |
 | Explorer session guide | `.claude/explorer/CLAUDE.md` |
 | Villager session guide | `.claude/villager/CLAUDE.md` |
 | Issues FS | `.issues/` |
-| Architect role | `team/roles/architect/ROLE.md` |
-| Dev role | `team/roles/dev/ROLE.md` |
-| AppSec role | `team/roles/appsec/ROLE.md` |
-| DevOps role | `team/roles/devops/ROLE.md` |
-| Conductor role | `team/roles/conductor/ROLE.md` |
+| Explorer role | `team/explorers/roles/explorer/ROLE.md` |
+| Architect role | `team/explorers/roles/architect/ROLE.md` |
+| Dev role | `team/explorers/roles/dev/ROLE.md` |
+| AppSec role | `team/explorers/roles/appsec/ROLE.md` |
+| DevOps role | `team/explorers/roles/devops/ROLE.md` |
+| Conductor role | `team/explorers/roles/conductor/ROLE.md` |
