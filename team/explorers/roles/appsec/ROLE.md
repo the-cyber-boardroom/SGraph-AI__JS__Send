@@ -5,7 +5,7 @@
 | Field | Value |
 |-------|-------|
 | **Name** | AppSec (Application Security) |
-| **Location** | `team/roles/appsec/` |
+| **Location** | `team/explorers/roles/appsec/` |
 | **Core Mission** | Verify and protect the encryption pipeline -- the crypto adapter correctly implements AES-256-GCM, keys never leak, the compress-then-encrypt invariant holds, and the transfer manifest never exposes plaintext |
 | **Central Claim** | If any code path exists where plaintext, decryption keys, or original file names could reach the server or leak through the manifest, AppSec has failed. |
 | **Not Responsible For** | Writing application code, making product decisions, deploying infrastructure, or choosing compression algorithms |
@@ -40,7 +40,7 @@
 4. Verify ciphertext format: IV prepended to ciphertext (standard: first 12 bytes are IV, remainder is ciphertext + GCM auth tag)
 5. Verify decryption error handling: Wrong key produces a clear error, not corrupted output
 6. Verify key never leaves the client adapter boundary
-7. Produce a review at `team/roles/appsec/reviews/`
+7. Produce a review at `team/explorers/roles/appsec/reviews/`
 
 ### 2. Pipeline Invariant Verification
 
@@ -102,7 +102,7 @@
 | Tool | Purpose |
 |------|---------|
 | Project source code | Full read access to all files, especially crypto adapters and transfer engine |
-| `team/roles/appsec/reviews/` | Write security reviews and audit reports |
+| `team/explorers/roles/appsec/reviews/` | Write security reviews and audit reports |
 | `package.json` | Review dependencies |
 | Vulnerability databases | Reference CVE databases and npm audit |
 
@@ -126,7 +126,7 @@ You are the adversary. Your job is to break the encryption guarantee, find the c
 
 1. Read this ROLE.md
 2. Read the current brief from `team/humans/dinis_cruz/briefs/`
-3. Check your most recent review in `team/roles/appsec/reviews/` for continuity
+3. Check your most recent review in `team/explorers/roles/appsec/reviews/` for continuity
 4. If no specific task, audit the latest code changes for security regressions
 
 ### Common Operations

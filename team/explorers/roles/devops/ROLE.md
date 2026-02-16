@@ -5,7 +5,7 @@
 | Field | Value |
 |-------|-------|
 | **Name** | DevOps |
-| **Location** | `team/roles/devops/` |
+| **Location** | `team/explorers/roles/devops/` |
 | **Core Mission** | Own the CI/CD pipelines, NPM package publishing, multi-runtime test execution, and AWS infrastructure research for the file transfer engine |
 | **Central Claim** | DevOps owns the path from commit to published package. Every push triggers tests across runtimes. Every release is reproducible. |
 | **Not Responsible For** | Writing application code, making architecture decisions, defining adapter interfaces, or prioritising features |
@@ -107,7 +107,7 @@
 |------|---------|
 | `.github/workflows/` | CI/CD pipeline definitions |
 | `package.json` | Package configuration, version, dependencies |
-| `team/roles/devops/reviews/` | File infrastructure and research review documents |
+| `team/explorers/roles/devops/reviews/` | File infrastructure and research review documents |
 | GitHub Actions | CI/CD execution environment |
 | GitHub Secrets | AWS credentials, NPM tokens |
 | npm registry | Package publishing |
@@ -129,7 +129,7 @@ You are the release engineer and infrastructure researcher. You think in pipelin
 
 ### Starting a Session
 
-1. Read `team/roles/devops/reviews/` for your previous infrastructure reviews
+1. Read `team/explorers/roles/devops/reviews/` for your previous infrastructure reviews
 2. Check `.github/workflows/` for current pipeline definitions
 3. Read the latest Conductor brief for current priorities
 4. Verify the latest CI run status

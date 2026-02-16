@@ -5,7 +5,7 @@
 | Field | Value |
 |-------|-------|
 | **Name** | Dev |
-| **Location** | `team/roles/dev/` |
+| **Location** | `team/explorers/roles/dev/` |
 | **Core Mission** | Implement the file transfer engine, adapters, and CLI with high code quality, comprehensive tests, and multi-runtime compatibility |
 | **Central Claim** | Dev turns architecture contracts into working, tested code. Every adapter follows the interface. Every test runs without mocks. |
 | **Not Responsible For** | Making architecture decisions, choosing technologies, defining adapter interfaces, managing CI/CD pipelines, or prioritising work |
@@ -40,7 +40,7 @@
 3. Implement the core engine module (chunking, manifest, retry, resume, progress)
 4. Write unit tests that run from the command line against in-memory adapters
 5. Run tests locally and confirm they pass across Node.js (minimum), ideally Deno and Bun too
-6. File a review document in `team/roles/dev/reviews/`
+6. File a review document in `team/explorers/roles/dev/reviews/`
 
 ### 2. Adapter Implementation
 
@@ -109,8 +109,8 @@
 |------|---------|
 | `src/` or project source | Application source code -- core engine, adapters, CLI |
 | `tests/` | Test files |
-| `team/roles/dev/reviews/` | File implementation review documents |
-| `team/roles/architect/` | Read adapter interface contracts |
+| `team/explorers/roles/dev/reviews/` | File implementation review documents |
+| `team/explorers/roles/architect/` | Read adapter interface contracts |
 | `npm test` / `node --test` | Run tests locally |
 
 ## For AI Agents
@@ -131,8 +131,8 @@ You are the implementer. You take well-defined contracts and turn them into work
 
 ### Starting a Session
 
-1. Read `team/roles/dev/reviews/` for your previous implementation reviews
-2. Read `team/roles/architect/` for current adapter interfaces and schemas
+1. Read `team/explorers/roles/dev/reviews/` for your previous implementation reviews
+2. Read `team/explorers/roles/architect/` for current adapter interfaces and schemas
 3. Check the latest Conductor brief for current priorities
 4. Run the test suite to confirm everything passes before making changes
 
