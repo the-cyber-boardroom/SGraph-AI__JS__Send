@@ -1,0 +1,15 @@
+{
+  "node_id": "e1000007",
+  "node_type": "git-repo",
+  "node_index": 0,
+  "label": "Explorer-1",
+  "title": "Explorer Role — Issue Tracker",
+  "description": "Explorer team leadership, component maturity assessment, and handover coordination for the JS file transfer engine.",
+  "status": "active",
+  "created_at": 1739577600000,
+  "updated_at": 1739577600000,
+  "created_by": "c0000001",
+  "tags": ["explorer", "team-lead", "transfer-engine"],
+  "links": [],
+  "properties": {}
+}

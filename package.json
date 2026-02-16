@@ -1,0 +1,16 @@
+{
+  "name": "@sgraph-ai/send",
+  "version": "0.0.1",
+  "description": "Pure JavaScript file transfer engine for SGraph Send",
+  "type": "module",
+  "main": "sgraph_ai_send/index.mjs",
+  "exports": {
+    ".": "./sgraph_ai_send/index.mjs",
+    "./version": "./sgraph_ai_send/Version.mjs"
+  },
+  "scripts": {
+    "test": "node --test 'tests/unit/test_*.mjs'"
+  },
+  "keywords": ["file-transfer", "chunked-upload", "s3", "encryption"],
+  "license": "MIT"
+}

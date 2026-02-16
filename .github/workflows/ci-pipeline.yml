@@ -50,12 +50,14 @@ jobs:
     name: Increment Tag
     runs-on: ubuntu-latest
     needs: [run-tests]
+    env:
+      GIT__BRANCH: ${{ inputs.git_branch }}
     steps:
       - uses: actions/checkout@v4
 
       - name: Increment Tag
         if: inputs.should_increment_tag
-        uses: owasp-sbot/OSBot-GitHub-Actions/.github/actions/git__increment-tag@dev
+        uses: ./.github/actions/git__increment-tag
         with:
           release_type: ${{ inputs.release_type }}
 
