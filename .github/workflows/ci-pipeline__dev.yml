@@ -12,5 +12,5 @@ jobs:
       git_branch          : 'dev'
       release_type        : 'minor'
       should_increment_tag: true
-      should_publish_npm  : false
+      should_publish_npm  : true
     secrets: inherit

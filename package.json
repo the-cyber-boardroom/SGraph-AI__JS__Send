@@ -1,16 +1,36 @@
 {
   "name": "@sgraph-ai/send",
   "version": "0.0.1",
-  "description": "Pure JavaScript file transfer engine for SGraph Send",
+  "description": "Zero-knowledge encrypted file sharing — JS components for SGraph Send",
   "type": "module",
   "main": "sgraph_ai_send/index.mjs",
   "exports": {
     ".": "./sgraph_ai_send/index.mjs",
-    "./version": "./sgraph_ai_send/Version.mjs"
+    "./version": "./sgraph_ai_send/Version.mjs",
+    "./v0/*": "./sgraph_ai_send/v0/*"
   },
+  "files": [
+    "sgraph_ai_send/"
+  ],
   "scripts": {
     "test": "node --test 'tests/unit/test_*.mjs'"
   },
-  "keywords": ["file-transfer", "chunked-upload", "s3", "encryption"],
-  "license": "MIT"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/the-cyber-boardroom/SGraph-AI__JS__Send.git"
+  },
+  "homepage": "https://send.sgraph.ai",
+  "keywords": [
+    "sgraph",
+    "send",
+    "file-transfer",
+    "encryption",
+    "zero-knowledge",
+    "web-components",
+    "aes-256-gcm"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
 }
